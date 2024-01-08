@@ -1,0 +1,38 @@
+{
+    "name": "dig-lib",
+    "version": "0.0.0",
+    "private": true,
+    "type": "module",
+    "exports": {
+        "import": [
+            "./*.js"
+        ]
+    },
+    "scripts": {
+        "start": "nodemon --es-module-specifier-resolution=node  -r dotenv/config  ./src/app.js",
+        "start-prod": "node --es-module-specifier-resolution=node -r dotenv/config ./src/app.js"
+    },
+    "dependencies": {
+        "@grpc/grpc-js": "^1.9.12",
+        "@grpc/proto-loader": "^0.7.10",
+        "@socket.io/redis-emitter": "^5.1.0",
+        "cookie-parser": "~1.4.4",
+        "debug": "~2.6.9",
+        "dotenv": "^16.3.1",
+        "ejs": "^3.1.9",
+        "express": "~4.16.1",
+        "http-errors": "~1.6.3",
+        "jsonwebtoken": "^9.0.2",
+        "md5": "^2.3.0",
+        "morgan": "~1.9.1",
+        "nodemailer": "^6.9.7",
+        "nodemon": "^3.0.1",
+        "pg": "^8.11.3",
+        "pg-hstore": "^2.3.4",
+        "redis": "^4.6.12",
+        "sequelize": "^6.35.1",
+        "socket.io": "^4.7.2",
+        "socket.io-client": "^4.7.2",
+        "uuid": "^9.0.1"
+    }
+}
